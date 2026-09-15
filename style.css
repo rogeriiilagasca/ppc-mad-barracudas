@@ -2793,3 +2793,271 @@ img {
     }
 
 }
+/* =========================================================
+   PPC MAD BARRACUDAS
+   PREMIUM OST VIDEO SECTION
+========================================================= */
+
+.soundtrack-section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   OST CARD
+========================================================= */
+
+.soundtrack-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 55px;
+
+    border: 1px solid rgba(72, 228, 255, 0.18);
+
+    border-radius: var(--radius);
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(72, 228, 255, 0.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #061f30 0%,
+            #031521 55%,
+            #020b12 100%
+        );
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SUBTLE WATER ATMOSPHERE
+========================================================= */
+
+.soundtrack-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -220px;
+    top: -220px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(72, 228, 255, 0.08);
+
+    box-shadow:
+        0 0 0 35px rgba(72, 228, 255, 0.025),
+        0 0 0 70px rgba(72, 228, 255, 0.018),
+        0 0 0 105px rgba(72, 228, 255, 0.012);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   OST COPY
+========================================================= */
+
+.soundtrack-copy {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 480px;
+}
+
+
+.soundtrack-copy .eyebrow {
+    margin-bottom: 20px;
+}
+
+
+.soundtrack-copy h2 {
+    margin-bottom: 22px;
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3.6rem
+    );
+
+    line-height: 1;
+
+    letter-spacing: -0.045em;
+
+    text-transform: uppercase;
+}
+
+
+.soundtrack-copy h2 span {
+    display: block;
+
+    color: var(--cyan);
+}
+
+
+.soundtrack-copy > p:not(.eyebrow):not(.soundtrack-note) {
+    max-width: 420px;
+
+    margin-bottom: 20px;
+
+    color: #c4d4dc;
+
+    font-size: 0.95rem;
+
+    line-height: 1.75;
+}
+
+
+.soundtrack-note {
+    max-width: 400px;
+
+    color: #7894a3;
+
+    font-size: 0.78rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VIDEO FRAME
+========================================================= */
+
+.soundtrack-visual {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.soundtrack-video {
+    position: relative;
+
+    width: min(100%, 620px);
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(72, 228, 255, 0.28);
+
+    background: #020b12;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        0 0 45px rgba(0, 185, 232, 0.08);
+}
+
+
+/* =========================================================
+   YOUTUBE IFRAME
+========================================================= */
+
+.soundtrack-video iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   VIDEO GLOW
+========================================================= */
+
+.soundtrack-video::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .soundtrack-card {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 40px;
+    }
+
+    .soundtrack-copy {
+        max-width: 650px;
+    }
+
+    .soundtrack-video {
+        width: min(100%, 560px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .soundtrack-card {
+        gap: 30px;
+
+        padding: 26px 20px;
+
+        border-radius: 18px;
+    }
+
+    .soundtrack-copy h2 {
+        font-size: 2rem;
+    }
+
+    .soundtrack-video {
+        border-radius: 16px;
+    }
+
+}

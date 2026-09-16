@@ -3120,3 +3120,205 @@ img {
     }
 
 }
+/* =========================================
+   MULTI-PAGE TYPOGRAPHY POLISH
+   ========================================= */
+
+.page-hero h1 {
+    max-width: 900px;
+    margin: 18px auto 24px;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+}
+
+.page-hero h1 span {
+    display: block;
+    margin-top: 8px;
+    color: #48e4ff;
+    text-shadow:
+        0 0 18px rgba(72, 228, 255, 0.28),
+        0 0 45px rgba(72, 228, 255, 0.12);
+}
+
+.page-hero-text {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: #b8c7d9;
+    letter-spacing: 0.01em;
+}
+
+.page-hero .eyebrow,
+.section-heading .eyebrow,
+.content-card .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    color: #48e4ff;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin-top: 14px;
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 span {
+    display: block;
+    color: #48e4ff;
+    text-shadow: 0 0 22px rgba(72, 228, 255, 0.18);
+}
+
+.section-heading > p:not(.eyebrow) {
+    max-width: 760px;
+    margin: 24px auto 0;
+    color: #aebdce;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.content-grid {
+    gap: 28px;
+}
+
+.content-card {
+    position: relative;
+    padding: 36px;
+    border: 1px solid rgba(72, 228, 255, 0.12);
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17, 32, 52, 0.92),
+            rgba(7, 15, 27, 0.96)
+        );
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.content-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 36px;
+    width: 70px;
+    height: 2px;
+    background: #48e4ff;
+    box-shadow: 0 0 14px rgba(72, 228, 255, 0.45);
+}
+
+.content-card h3 {
+    margin: 12px 0 20px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.content-card p:not(.eyebrow) {
+    color: #aebdce;
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+
+.values-list {
+    margin-top: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.values-list li {
+    position: relative;
+    padding: 13px 0 13px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: #f5f9ff;
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.values-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #48e4ff;
+    box-shadow: 0 0 10px rgba(72, 228, 255, 0.65);
+    transform: translateY(-50%);
+}
+
+.values-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.values-section::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(72, 228, 255, 0.035);
+    filter: blur(80px);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.values-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer p:first-child {
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.site-footer p:last-child {
+    margin-top: 8px;
+    color: #48e4ff;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .page-hero h1 {
+        font-size: clamp(2.7rem, 12vw, 4.2rem);
+        letter-spacing: -0.045em;
+    }
+
+    .page-hero-text {
+        font-size: 0.96rem;
+        line-height: 1.7;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(2.1rem, 10vw, 3.4rem);
+    }
+
+    .content-card {
+        padding: 28px 24px;
+    }
+
+    .content-card::before {
+        left: 24px;
+    }
+
+}

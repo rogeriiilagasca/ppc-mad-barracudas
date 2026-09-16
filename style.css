@@ -3082,3 +3082,41 @@ img {
     font-size: 0.68rem;
     letter-spacing: 0.18em;
 }
+/* =========================================================
+   HEADER — REMOVE LOGO / ENLARGE BRAND TEXT
+========================================================= */
+
+.brand-mark {
+    display: none !important;
+}
+
+.brand {
+    gap: 0;
+}
+
+.brand-main {
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.brand-sub {
+    margin-top: 6px;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+}
+
+
+/* MOBILE HEADER BRANDING */
+
+@media (max-width: 520px) {
+
+    .brand-main {
+        font-size: 0.82rem;
+    }
+
+    .brand-sub {
+        font-size: 0.55rem;
+        letter-spacing: 0.14em;
+    }
+
+}

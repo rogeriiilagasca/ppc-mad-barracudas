@@ -3956,3 +3956,210 @@ img {
 .hero-meta span {
     display: none !important;
 }
+/* =========================================================
+   PPC MAD BARRACUDAS — FULL VISUAL CLEANUP
+   Premium Family + Championship Direction
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   REMOVE TEMPLATE-STYLE DECORATIVE NUMBERS
+   --------------------------------------------------------- */
+
+.value-number,
+.gallery-number,
+.placeholder-icon {
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   CLEAN UP VALUE CARDS
+   --------------------------------------------------------- */
+
+.value-card {
+    padding-top: 28px;
+}
+
+.value-card h3 {
+    margin-top: 0;
+}
+
+
+/* ---------------------------------------------------------
+   CLEAN UP GALLERY CARDS
+   --------------------------------------------------------- */
+
+.gallery-placeholder-content {
+    padding-top: 34px;
+}
+
+.gallery-watermark {
+    opacity: 0.035;
+    letter-spacing: 0.12em;
+}
+
+
+/* ---------------------------------------------------------
+   REDUCE "GAMING / ESPORTS" FEEL
+   Keep athletic, but more mature and professional.
+   --------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Manrope", "DM Sans", sans-serif;
+}
+
+.eyebrow,
+.gallery-label,
+.chapter-points span,
+.hero-meta strong {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* ---------------------------------------------------------
+   MORE REFINED SECTION HEADINGS
+   --------------------------------------------------------- */
+
+.section-heading h2,
+.chapter-content h2,
+.soundtrack-copy h2,
+.contact-section h2,
+.final-message h2 {
+    letter-spacing: -0.035em;
+}
+
+
+/* ---------------------------------------------------------
+   REDUCE EXCESSIVE GLOW
+   --------------------------------------------------------- */
+
+.hero-emblem img {
+    filter:
+        drop-shadow(0 0 18px rgba(72, 228, 255, 0.20))
+        drop-shadow(0 0 45px rgba(8, 127, 203, 0.12));
+}
+
+.gallery-card,
+.value-card,
+.team-placeholder,
+.content-card,
+.story-card {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ---------------------------------------------------------
+   CLEANER CARD BORDERS
+   --------------------------------------------------------- */
+
+.gallery-card,
+.value-card,
+.team-placeholder,
+.content-card,
+.story-card {
+    border-color: rgba(255, 255, 255, 0.075);
+}
+
+
+/* ---------------------------------------------------------
+   MORE NATURAL HOVER EFFECTS
+   --------------------------------------------------------- */
+
+.gallery-card:hover,
+.value-card:hover,
+.team-placeholder:hover,
+.content-card:hover,
+.story-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ---------------------------------------------------------
+   CLEANER BUTTONS
+   --------------------------------------------------------- */
+
+.btn {
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+.hero-btn {
+    border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   HERO META — NO TEMPLATE FEEL
+   --------------------------------------------------------- */
+
+.hero-meta {
+    gap: 42px;
+}
+
+.hero-meta div {
+    gap: 0;
+}
+
+.hero-meta strong {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+}
+
+
+/* ---------------------------------------------------------
+   CLEANER EYEBROWS
+   --------------------------------------------------------- */
+
+.eyebrow {
+    letter-spacing: 0.18em;
+}
+
+
+/* ---------------------------------------------------------
+   REDUCE OVER-STYLIZED WATERMARKS
+   --------------------------------------------------------- */
+
+.gallery-watermark {
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   CLEANER MOBILE SPACING
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .section-heading h2,
+    .chapter-content h2,
+    .soundtrack-copy h2,
+    .contact-section h2,
+    .final-message h2 {
+        letter-spacing: -0.025em;
+    }
+
+    .hero-meta {
+        gap: 24px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .hero-meta {
+        gap: 16px;
+    }
+
+    .hero-meta strong {
+        font-size: 0.62rem;
+    }
+
+    .eyebrow {
+        letter-spacing: 0.14em;
+    }
+}

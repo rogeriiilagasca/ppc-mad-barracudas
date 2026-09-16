@@ -3062,23 +3062,39 @@ img {
 
 }
 /* =========================================================
-   HEADER OFFICIAL LOGO — FIT TO CIRCLE
+   HEADER OFFICIAL LOGO — CLEAN CIRCULAR BADGE
 ========================================================= */
 
 .brand-mark {
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 50%;
     overflow: hidden;
-    padding: 0;
-    display: grid;
-    place-items: center;
+
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+        0 0 0 1px rgba(72, 228, 255, 0.12),
+        0 0 18px rgba(72, 228, 255, 0.12);
 }
 
 .brand-mark img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+
     display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 50%;
+
+    image-rendering: auto;
 }

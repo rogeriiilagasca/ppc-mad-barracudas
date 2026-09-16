@@ -3949,3 +3949,10 @@ img {
         width: min(280px, 78vw);
     }
 }
+/* =========================================================
+   REMOVE DECORATIVE NUMBERING
+   ========================================================= */
+
+.hero-meta span {
+    display: none !important;
+}
